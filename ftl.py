@@ -11,16 +11,16 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-"""
-Show bot is logged in 
-"""
+    """
+    Show bot is logged in 
+    """
     print("Logged in as {0.user}".format(client))
 
 @client.event
 async def on_message(message):
-"""
-Check every message (not sent by the bot) and check for valid urls to change
-"""
+    """
+    Check every message (not sent by the bot) and check for valid urls to change
+    """
     if message.author == client.user:
         return
 
