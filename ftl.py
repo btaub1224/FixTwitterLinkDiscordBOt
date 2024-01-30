@@ -28,15 +28,15 @@ async def on_message(message):
     tiktok_url = "https://www.tiktok.com"
 
     if any(valid_url in message.content for valid_url in valid_urls):
-        new_message = "https://fxtwitter.com" + 
+        new_message = "https://fxtwitter.com" + \
             str(message.content.split(".com", 1)[1].split(" ", 1)[0])
-        await message.channel.send("Fixed twitter link, originally posted by posted by " + 
+        await message.channel.send("Fixed twitter link, originally posted by posted by " + \
             str(message.author) + ": " + new_message)
 
     elif tiktok_url in message.content:
-        new_message = "https://vxtiktok.com" + 
+        new_message = "https://vxtiktok.com" + \
             str(message.content.split(".com", 1)[1].split(" ", 1)[0])
-        await message.channel.send("Fixed tiktok link, originally posted by posted by " + 
+        await message.channel.send("Fixed tiktok link, originally posted by posted by " + \
             str(message.author) + ": " + new_message)
 
 load_dotenv()
