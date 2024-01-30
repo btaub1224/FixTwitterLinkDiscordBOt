@@ -14,7 +14,7 @@ async def on_ready():
     """
     Show bot is logged in 
     """
-    print("Logged in as {0.user}".format(client))
+    print(f"Logged in as {client.user}")
 
 @client.event
 async def on_message(message):
