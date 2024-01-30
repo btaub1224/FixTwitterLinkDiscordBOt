@@ -4,3 +4,6 @@ Currently hosted on AWS.
 
 UPDATE:
 Added tiktok url fixing as well, by adding the "vx" prefix to the url
+
+UPDATE:
+Added CI to this repo so it will run pylint when making changes
